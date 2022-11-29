@@ -1,7 +1,7 @@
 import React from 'react'
 import cart from '../assets/images/cart.png';
 
-export default function Cart() {
+export default function CartWidget() {
   return (
     <>
         <div>

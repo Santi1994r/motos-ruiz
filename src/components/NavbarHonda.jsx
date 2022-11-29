@@ -9,7 +9,7 @@ import instagram from '../assets/images/instagram.png';
 import facebook from '../assets/images/facebook.png';
 import twitter from '../assets/images/twitter.png';
 import './navbarStyle.css';
-import Cart from './Cart';
+import CartWidget from './CartWidget';
 
 export default function NavbarHonda() {
   return (
@@ -41,7 +41,7 @@ export default function NavbarHonda() {
                 <img className='logoRedes' src={instagram} alt="santiago ruiz" />
                 <img className='logoRedes' src={facebook} alt="santiago ruiz" />
                 <img className='logoRedes' src={twitter} alt="santiago ruiz" />
-                <Cart />
+                <CartWidget />
             </div>
           </Nav>
         </Navbar.Collapse>
