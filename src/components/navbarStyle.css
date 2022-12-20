@@ -28,3 +28,24 @@
     padding: .3rem;
     
 }
+
+/* -------estilos de lean------ */
+
+.formContainer {
+    width: 35rem;
+}
+
+.titContacto {
+    font-size: 22px;
+}
+
+.inputContainer {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.input {
+    width: 50%;
+   
+}
