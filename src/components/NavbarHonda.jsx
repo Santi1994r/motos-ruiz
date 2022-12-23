@@ -4,10 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import logoHonda from '../assets/images/honda-motos-logo.png'
-import instagram from '../assets/images/instagram.png';
-import facebook from '../assets/images/facebook.png';
-import twitter from '../assets/images/twitter.png';
+import logo from '../../src/img/logo.png'
+
 import './navbarStyle.css';
 import CartWidget from './CartWidget';
 
@@ -33,14 +31,14 @@ export default function NavbarHonda() {
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="w-100 d-flex justify-content-end">
             <Button href='#' target='_blanck' className='honda' variant="link">
-                <img className='logoHonda' src={logoHonda} alt="santiago ruiz" />
+                <img className='logoHonda' src={logo} alt="logo honda" />
             </Button>
         </Nav>
           <Nav className="containerLogo w-100">
             <div className="d-flex justify-content-end">
-                <img className='logoRedes' src={instagram} alt="santiago ruiz" />
-                <img className='logoRedes' src={facebook} alt="santiago ruiz" />
-                <img className='logoRedes' src={twitter} alt="santiago ruiz" />
+                <img className='logoRedes' src='../assets/images/instagram.png' alt="instagram" />
+                <img className='logoRedes' src='../assets/images/facebook.png' alt="facebook" />
+                <img className='logoRedes' src='../assets/images/twitter.png' alt="twitter" />
                 <CartWidget />
             </div>
           </Nav>
