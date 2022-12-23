@@ -8,6 +8,7 @@ import logo from '../../src/img/logo.png'
 
 import './navbarStyle.css';
 import CartWidget from './CartWidget';
+import { NavLink } from 'react-router-dom';
 
 export default function NavbarHonda() {
   return (
@@ -16,15 +17,12 @@ export default function NavbarHonda() {
       <Container fluid>
         <Navbar.Brand href="#home">
         <NavDropdown className='p-2' title="Menu" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Honda Motos</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Post Venta
-              </NavDropdown.Item>
+              <NavLink to="/">Honda Motos</NavLink>
               <NavDropdown.Item href="#action/3.3">Concecionarios Oficiales</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Quiero Mi Honda
-              </NavDropdown.Item>
+              <NavLink to="/catalogo">
+              Catálogo
+              </NavLink>
             </NavDropdown>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

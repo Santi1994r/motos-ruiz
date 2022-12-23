@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import catalogo from "../../stock.json"
 import './styleCatalogo.css'
 const CatalogoMotos = () => {
@@ -9,8 +10,10 @@ const CatalogoMotos = () => {
             catalogo.map(moto => (
                 <>
                     
-                    <img className='motoCatalogo' key={moto.id} src={moto.fotoPrinc} alt="Honda Motos" />
-                    
+                    <NavLink to="/catalogo/">
+                      <img className='motoCatalogo' key={moto.id} src={moto.fotoPrinc} alt="Honda Motos" />
+                      
+                    </NavLink>
                 </>
             ))
         }
