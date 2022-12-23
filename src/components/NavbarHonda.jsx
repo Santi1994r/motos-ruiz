@@ -29,7 +29,7 @@ export default function NavbarHonda() {
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="w-100 d-flex justify-content-end">
             <Button href='#' target='_blanck' className='honda' variant="link">
-                <img className='logoHonda' src={logo} alt="logo honda" />
+                <NavLink to="/"><img className='logoHonda' src={logo} alt="logo honda" /></NavLink>
             </Button>
         </Nav>
           <Nav className="containerLogo w-100">
