@@ -1,8 +1,15 @@
+import { Link } from "react-router-dom";
+import './error.css'
 
 export const Error = () => {
   return (
     <section>
-        <h1>Error 404: Not Found</h1>
+        <h1 className="titError">Error 404: Not Found</h1>
+        <div className="containerLinkErr">
+            <Link to="/">
+                <button className="btnError">Volver al Menu</button>
+            </Link>
+        </div>
     </section>
   )
 }

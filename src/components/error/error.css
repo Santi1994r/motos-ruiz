@@ -1,0 +1,22 @@
+
+.titError {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.containerLinkErr {
+    display: flex;
+    justify-content: center;
+}
+
+.btnError {
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.btnError:hover {
+    background-color: red;
+    color: #fff;
+}

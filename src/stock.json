@@ -2,6 +2,7 @@
     {
         "id": 1,
         "fotoPrinc": "./assets/images/catalogo/wave110/wave110Princ.jpg",
+        "name": "Honda Wave",
         "foto1": "../../src/assets/images/catalogo/wave110/disenioWave110.jpg",
         "text1": "Wave Cast es la versión con freno a tambor y freno a disco, que incorpora además llantas de aleación.",
         "foto2": "../../src/assets/images/catalogo/wave110/durabilidad.jpg",
@@ -20,6 +21,7 @@
     {
         "id": 2,
         "fotoPrinc": "./assets/images/catalogo/twister250/fotoPrinc.jpg",
+        "name": "Honda Twister 250",
         "foto1": "../../src/assets/images/catalogo/wave110/disenioWave110.jpg",
         "text1": "Wave Cast es la versión con freno a tambor y freno a disco, que incorpora además llantas de aleación.",
         "foto2": "../../src/assets/images/catalogo/wave110/durabilidad.jpg",
@@ -38,6 +40,7 @@
     {
         "id": 3,
         "fotoPrinc": "./assets/images/catalogo/african/fotoPrinc.jpg",
+        "name": "African Twin",
         "foto1": "../../src/assets/images/catalogo/wave110/disenioWave110.jpg",
         "text1": "Wave Cast es la versión con freno a tambor y freno a disco, que incorpora además llantas de aleación.",
         "foto2": "../../src/assets/images/catalogo/wave110/durabilidad.jpg",
