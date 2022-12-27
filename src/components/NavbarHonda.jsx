@@ -17,11 +17,10 @@ export default function NavbarHonda() {
       <Container fluid>
         <Navbar.Brand href="#home">
         <NavDropdown className='p-2' title="Menu" id="basic-nav-dropdown">
-              <NavLink to="/">Honda Motos</NavLink>
-              <NavDropdown.Item href="#action/3.3">Concecionarios Oficiales</NavDropdown.Item>
+              <NavLink className="navlink" to="/">Honda Motos</NavLink>
               <NavDropdown.Divider />
-              <NavLink to="/catalogo">
-              Catálogo
+              <NavLink className="navlink" to="/store">
+              Store Honda
               </NavLink>
             </NavDropdown>
         </Navbar.Brand>

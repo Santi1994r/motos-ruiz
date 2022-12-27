@@ -29,23 +29,13 @@
     
 }
 
-/* -------estilos de lean------ */
-
-.formContainer {
-    width: 35rem;
+.navlink {
+    text-decoration: none;
+    color: #000;
+    padding: .8rem;
 }
 
-.titContacto {
-    font-size: 22px;
-}
-
-.inputContainer {
-    padding-right: 0;
-    padding-left: 0;
-    width: 100%;
-}
-
-.input {
-    width: 50%;
-   
+.navlink:hover {
+    color: red;
+    padding: .8rem;
 }

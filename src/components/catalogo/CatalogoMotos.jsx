@@ -9,10 +9,8 @@ const CatalogoMotos = () => {
         {
             catalogo.map(moto => (
                 <>
-                    
-                    <NavLink to="/:1" >
+                    <NavLink to="/" >
                       <img className='motoCatalogo' key={moto.id} src={moto.fotoPrinc} alt="Honda Motos" />
-                      
                     </NavLink>
                 </>
             ))

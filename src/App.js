@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CatalogoMotos from "./components/catalogo/CatalogoMotos";
-import SelectMoto from "./components/catalogo/SelectMoto";
+import SelectMoto from "./components/catalogo/ItemDetailContainer";
+import { Error } from "./components/error/Error";
 import ItemListContainer from "./components/ItemListContainer";
 import NavbarHonda from "./components/NavbarHonda";
+import { Store } from "./components/store/Store";
 
 function App() {
   return (
@@ -11,8 +12,10 @@ function App() {
         <NavbarHonda />
         <Routes>
           <Route path="/" element={<ItemListContainer greeting="Descubre Tu Honda" />} />
-          <Route path="/catalogo" element={<CatalogoMotos />} />
+          <Route path="/store" element={<Store />} />
           <Route path="/catalogo/:id" element={<SelectMoto />} />
+          <Route path="*" element={<Error />} />
+
         </Routes>
       </BrowserRouter>
     </>
