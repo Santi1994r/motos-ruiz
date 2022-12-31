@@ -1,16 +1,27 @@
-import React from 'react'
+import axios from 'axios';
 import { useParams } from 'react-router-dom'
+import { useEffect, useState } from "react";
 
-const ItemDetailContainer = ({ stockBikes }) => {
-    const { name, fotoPrinc } = useParams();
+const ItemDetailContainer = () => {
+    const { name } = useParams();
+    const [bikes, setBikes] = useState([])
+  useEffect(() => {
 
-    console.log(fotoPrinc);
-
+    axios.get("./assets/json/stock.json")
+      .then(res => setBikes(res.data))
+      .catch(err => console.log(err))
+  }, [])
+  
+  
   return (
     <div>
-        <h1>{name}</h1>
-      <p>{stockBikes.text1}</p>
-      <img src={fotoPrinc} alt="moto" />
+      <h1>{name}</h1>
+      {
+        bikes.find(bike => (
+          {/* <img src={bike.fotoPrinc} alt="moto" /> */}
+          ))
+      }
+      
     </div>
   )
 }

@@ -32,7 +32,10 @@
 
 .contador {
     padding: .3rem;
-    
+}
+
+.btnCart {
+    border: none;
 }
 
 .navlink {

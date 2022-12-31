@@ -1,11 +1,22 @@
 import React from 'react'
 import CatalogoMotos from './catalogo/CatalogoMotos'
+import { useEffect, useState } from "react";
+/* import stockBikes from "./stock.json" */
+import axios from 'axios';
 
 export default function ItemListContainer(props) {
+  const [stockBikes, setStockBikes] = useState([])
+
+  useEffect(() => {
+    axios.get("./assets/json/stock.json")
+      .then(resp => setStockBikes(resp.data))
+      .catch(err => console.log(err))
+   
+  }, [])
+
   return (
     <div>
-        <h1 className='text-center my-4'>{props.greeting}</h1>
-        <CatalogoMotos />
+        <CatalogoMotos stockBikes={stockBikes}  />
     </div>
   )
 };

@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import catalogo from "../../stock.json"
 import './styleCatalogo.css'
-const CatalogoMotos = () => {
+const CatalogoMotos = ({ stockBikes }) => {
   return (
     <section className='containerCatalogo'>
       
         {
-          catalogo.map(moto => (
+          stockBikes.map(moto => (
             <>
-                    <Link to={`${moto.name.toLowerCase()}`} >
+                    <Link to={`/catalogo/${moto.name.toLowerCase()}`} >
                       <img className='motoCatalogo' key={moto.id} src={moto.fotoPrinc} alt="Honda Motos" />
                     </Link>
                 </>
